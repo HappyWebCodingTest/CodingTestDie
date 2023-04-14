@@ -8,8 +8,8 @@ let input = require("fs")
   .trim()
   .split("\n");
 
-let arrA = input[0].split(" ").map((i) => Number(i));
-let arrB = input[1].split(" ").map((i) => Number(i));
+let arrA = input[1].split(" ").map((i) => Number(i));
+let arrB = input[2].split(" ").map((i) => Number(i));
 arrA.sort((a, b) => a - b);
 arrB.sort((a, b) => b - a);
 
