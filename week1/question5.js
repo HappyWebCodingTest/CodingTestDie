@@ -39,3 +39,4 @@ function solution(array) {
       return el === "7";
     }).length;
 }
+// filter를 이용하고 싶으면 이렇게 사용해야함!
