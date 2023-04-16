@@ -1,10 +1,11 @@
 //vsc에서 출력이 제대로 되는데 백준에 제출을 하면 틀렸다고 해서 거의 1시간을 헤맸습니다,,
 //해결방법 : input 받는 부분에서 trim 적어주기 (입력을 받을 때 공백이 들어갈 수도 있으니까)
 //궁금증 : 근데 어차피 뒤에서 map(v => +v)로 숫자로 바꿔주는데 trim이 없는게 이렇게 입출력에서 크리티컬한 문제가 되나...?
+//2점
 
 let fs = require("fs");
 let input = fs
-  .readFileSync("week2/BOJ10773.txt")
+  .readFileSync("BOJ10773.txt")
   .toString()
   .trim()
   .split("\n")
@@ -26,3 +27,5 @@ if (stack.length) {
 }
 
 console.log(result);
+
+console.log([].reduce((sum, cur) => sum + cur));

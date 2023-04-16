@@ -29,3 +29,6 @@ function solution(answers) {
   }
   return answer;
 }
+
+//for문을 이용하지 않고 answers.filter((a,i)=> a === first[i%first.length])
+//이런식으로 filter를 돌려줌으로써 불필요한 반복을 막아주는 풀이 구글링 중 발견

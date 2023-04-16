@@ -1,5 +1,6 @@
 //https://school.programmers.co.kr/learn/courses/30/lessons/42587
 //BOJ1966 https://www.acmicpc.net/problem/1966 과 동일한 문제
+//2점
 
 class Node {
   constructor(value) {
