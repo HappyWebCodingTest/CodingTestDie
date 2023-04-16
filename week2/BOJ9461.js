@@ -7,8 +7,8 @@
 let input = require("fs")
   .readFileSync("input.txt")
   .toString()
-  .split("\n")
-  .map((element) => Number(element)); //string이 아닌 바로 number로 변환
+  .trim()
+  .split("\n");
 
 input.shift();
 const MAX = Math.max(...input);
