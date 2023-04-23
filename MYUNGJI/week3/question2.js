@@ -20,7 +20,6 @@ function solution(arr) {
   for (let x of arr) {
     let res = Number(x.toString().split("").reverse().join(""));
     if (isPrime(res)) answer.push(res);
-    ㄴ;
   }
   return answer;
 }
