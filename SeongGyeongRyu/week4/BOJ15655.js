@@ -38,17 +38,16 @@ const solve = (N, M, arr) => {
     }
   };
 
-// recursion(-1) [t,f,f,f]  
-// recursion(0) 
-// - [t,t,f,f]
-// 1 7 
-//  - [t,f,t,f]
-// 1 8 
-// - [t,f,f,t]
-// 1 9
-// - [f,f,f,f]
-// - [f,t,f,f] 
-
+  // recursion(-1) [t,f,f,f]
+  // recursion(0)
+  // - [t,t,f,f]
+  // 1 7
+  //  - [t,f,t,f]
+  // 1 8
+  // - [t,f,f,t]
+  // 1 9
+  // - [f,f,f,f]
+  // - [f,t,f,f]
 
   recursion(-1);
   console.log(output.join("\n"));
