@@ -14,7 +14,7 @@ function solution(s) {
   if (stackCount === 0) return true;
   else return false;
 }
-// 효율성 테스트 실패 => 시간 복잡도를 줄어야함!!
+// 효율성 테스트 실패 => 시간 복잡도를 줄어야함!! let i=0 때문이었음!
 function solution(s) {
   let stackCount = 0;
 
