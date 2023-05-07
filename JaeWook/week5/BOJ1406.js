@@ -1,6 +1,6 @@
 // 커서를 파악하는게 중요한 문제였다.
 // 스택을 사용해서 커서를 중심으로 왼쪽과 오른쪽 스택을 나누어서 생각했다.
-// 스택을 두개사용해서 푸는게 핵심!
+// 스택을 두개사용해서 푸는게 핵심이다!
 const fs = require("fs");
 const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
 const input = fs.readFileSync(filePath).toString().split("\n");
