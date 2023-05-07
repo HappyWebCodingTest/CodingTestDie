@@ -17,11 +17,22 @@ const makeBinary = (num) => {
   }
   binary.push(number);
 
-  return binary.reverse().join("");
+  return binary;
+};
+
+const findOne = (arr) => {
+  let oneIndexList = [];
+  arr.forEach((val, idx) => {
+    if (val === 1) {
+      oneIndexList.push(idx);
+    }
+  });
+
+  return oneIndexList.join(" ");
 };
 
 let ans = [];
-let temp = arr.map((val) => makeBinary(val)).map((v) => +v);
-console.log(temp);
-
-console.log(ans.join(" "));
+arr.forEach((val) => ans.push(makeBinary(val)));
+ans.forEach((order) => {
+  console.log(findOne(order));
+});
