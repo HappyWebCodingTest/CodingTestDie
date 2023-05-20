@@ -9,8 +9,7 @@ function solution(n, times) {
   let rt = n * times[times.length - 1]; //1.times가 1인당 걸리는 시간이기때문에 n * times 해줘야함
   let answer;
 
-  while (lt <= rt) {
-    // 5. 아래를 반복해서 오른쪽 값이 왼쪽 값보다 같거나 작아질떄까지 반복함
+  while (lt <= rt) { // 5. 아래를 반복해서 오른쪽 값이 왼쪽 값보다 같거나 작아질떄까지 반복함
     let mid = Math.floor((lt + rt) / 2);
     let max = 0;
 
